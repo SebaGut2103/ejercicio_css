@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-4</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    height:100%;
+}
+.head{
+    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+.square{
+    max-width: 600px;
+    min-height: 33vh;
+}
+.orange{
+    border: solid black;
+    background-color: orange;
+}
+.orange1{
+    background-color: orange;
+}
+.grey{
+    background-color: grey;
+}
+.grey1{
+    background: grey;
+}
+.blue{
+    background-color: #19232f;
+}
+.blue1{
+    background-color: #19232f;
+}
+@media (max-width: 768px){
+    .head{
+        grid-template-columns: 3fr;
+    }
+    .square{
+        grid-template-columns: 3fr;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="square orange"></div>
+        <div class="square orange1"></div>
+        <div class="square grey"></div>
+        <div class="square grey1"></div>
+        <div class="square blue"></div>
+        <div class="square blue1"></div>
+    </div>
+</body>
+
+</html>

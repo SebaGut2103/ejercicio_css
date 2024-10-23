@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-2</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    height:100%;
+}
+.head{
+    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.square{
+    max-width: 600px;
+    min-height: 33vh;
+}
+.orange{
+    background-color: orange;
+}
+.grey{
+    grid-row: -2 / span 2;
+    grid-column: 1;
+    background-color: grey;
+}
+.blue{
+    grid-column: 2;
+    background-color: #19232f;
+}
+.orange1{
+    grid-row: span 2;
+    grid-column: 2;
+    background-color: orange;
+}
+.blue1{
+    grid-row: -2 / span 2;
+    grid-column: 3;
+    background-color: #19232f;
+}
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="square orange"></div>
+        <div class="square orange1"></div>
+        <div class="square orange"></div>
+        <div class="square grey"></div>
+        <div class="square blue"></div>
+        <div class="square blue1"></div>
+
+    </div>
+</body>
+
+</html>
